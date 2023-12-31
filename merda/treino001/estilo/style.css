@@ -1,23 +1,43 @@
+@charset "UTF-8";
 
+:root{
+    --cor1: #403F4C; 
+    --cor2: #2DE1C2;
+    --cor3: #6AD5CB;
+    --cor4: #7FBEAB;
+    --cor5: #000000;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000000;
     color: aliceblue;
     margin: auto;
 }
-section{
+nav{
+    background-color: var(--cor3);
+}
+header{
+    background-image: linear-gradient(var(--cor3), var(--cor4));
     display: inline-block;
     text-align:  center;
     width: 100%;
     height: 200px;
-    background-color: #6BAA75;
     padding: 10px 0px 0px 0px;
-    margin: 10px 10px 10px 10px;
+    margin: 0px 0px 10px 0px;
     color: #000000;
+    box-shadow: 0px 7px 2px var(--cor3) ;
+}
+li{
+    width: 200px;
 }
 .container{
-    max-width: 1000px;
-    margin: 20px auto;
+
+    margin: 2px auto;
     overflow: hidden;
     line-height: 2em;
     font-size: 20px;
@@ -27,7 +47,7 @@ a{
     color: #69747C;
 }
 img{
-    float: right;
+    float:right;
     width: 40%; /* Ajuste a largura conforme necessário */
     border-radius: 8px; /* Opcional: Adiciona borda arredondada à imagem */
 }
