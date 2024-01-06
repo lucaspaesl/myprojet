@@ -17,11 +17,9 @@ body{
     background-color: #000000;
     color: aliceblue;
     margin: auto;
+    position: relative;
 }
-nav{
-    background-color: var(--cor4);
-    margin: 0px;
-}
+
 header{
     margin: 0px;
     background-image: linear-gradient(var(--cor3), var(--cor4));
@@ -32,6 +30,12 @@ header{
     padding: 10px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     color: #000000;
+}
+.nave{
+    text-align: left;
+    vertical-align: bottom;
+    height: 100px; /* Ajuste conforme necessário */
+    line-height: 185px; /* Ajuste conforme necessário */
 }
 li{
     width: 200px;
@@ -52,3 +56,14 @@ img{
     width: 40%; /* Ajuste a largura conforme necessário */
     border-radius: 8px; /* Opcional: Adiciona borda arredondada à imagem */
 }
+footer{
+    background-color: #1d1c22;
+}
+.current-year{
+    width: 500px;
+}
+.creater{
+    overflow: hidden;
+    text-align: right;
+}
+
