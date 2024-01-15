@@ -14,16 +14,16 @@
 html, body{
     min-height: 100vh;
 }
-body{
+/*body{
     
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000000;
     color: aliceblue;
     margin: auto;
     position: relative;
-}
+}*/
 
-header{
+body{
     margin: 0px;
     background-image: linear-gradient(var(--cor3), var(--cor4));
     display: inline-block;
@@ -57,7 +57,7 @@ a{
 img{
     float:right;
     width: 40%; /* Ajuste a largura conforme necessário */
-    border-radius: 8px; /* Opcional: Adiciona borda arredondada à imagem */
+    border-radius: 50%; /* Opcional: Adiciona borda arredondada à imagem */
 }
 footer{
     background-color: #1d1c22;
