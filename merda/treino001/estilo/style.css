@@ -13,17 +13,18 @@
 }
 html, body{
     min-height: 100vh;
+    background: black;
+    color: white;
 }
-/*body{
+ody{
     
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000000;
     color: aliceblue;
     margin: auto;
     position: relative;
-}*/
-
-body{
+}
+header{
     margin: 0px;
     background-image: linear-gradient(var(--cor3), var(--cor4));
     display: inline-block;
@@ -34,39 +35,7 @@ body{
     margin: 0px 0px 0px 0px;
     color: #000000;
 }
-.nave{
-    text-align: left;
-    vertical-align: bottom;
-    height: 100px; /* Ajuste conforme necessário */
-    line-height: 185px; /* Ajuste conforme necessário */
+div#icones img{
+    width: 50px;
+    border-radius: 50%;
 }
-li{
-    width: 200px;
-}
-.container{
-
-    margin: 2px auto;
-    overflow: hidden;
-    line-height: 2em;
-    font-size: 20px;
-}
-a{
-    text-decoration:none;
-    color: #69747C;
-}
-img{
-    float:right;
-    width: 40%; /* Ajuste a largura conforme necessário */
-    border-radius: 50%; /* Opcional: Adiciona borda arredondada à imagem */
-}
-footer{
-    background-color: #1d1c22;
-}
-.current-year{
-    width: 500px;
-}
-.creater{
-    overflow: hidden;
-    text-align: right;
-}
-
