@@ -14,23 +14,43 @@
 body{
     font: normal 20px ariel;
     background-color: #403F4C;
+   
 }
-header{
+#hero{
     background-color: #403F4C;
     text-align: center;
 }
-header img {
+#hero img {
     width: 500px;
     border-radius: 50%;
 }
-div{
-    background: #403F4C;
-    text-align: center;
-    border: 1px solid black;
-}
-a {
-    color: white;
-}
-div#icones{
+/* div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+} */
+#icones{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: auto;
+}
+#icones a {
+    color: white;
+    margin: 0 10px;
+}
+#icones img {
+    width: 40px;
+    border-radius: 50%;
+}
+footer {
+    font-size: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #000000;
 }
