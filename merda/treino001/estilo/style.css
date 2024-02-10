@@ -13,23 +13,45 @@
 }
 body{
     font: normal 20px ariel;
-    background-color: #403F4C;
+    background-color: var(--cor1);
    
 }
+.tudo{
+    min-width: 320px;
+    max-width: 1080px;
+    margin: auto;
+    padding: 50px;
+}
+header{
+    background-color: var(--cor5);
+    padding: 10px;
+    width: 100%;
+    left: 0;
+    margin: 10px;
+}
+ul{
+    list-style-type: none; 
+    padding: 0px;
+    text-align: left;
+    
+}
+li{
+    display: inline;
+}
 #hero{
-    background-color: #403F4C;
+    background-color: var(--cor1);
     text-align: center;
+    padding: 0px 10px 0px 10px;
+
 }
 #hero img {
-    width: 500px;
+    width: 100%;
+    max-width: 400px;
     border-radius: 50%;
 }
-/* div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-} */
+#hero a {
+    color: var(--cor3);
+}
 #icones{
    display: flex;
    justify-content: center;
@@ -37,7 +59,6 @@ body{
    height: auto;
 }
 #icones a {
-    color: white;
     margin: 0 10px;
 }
 #icones img {
@@ -51,6 +72,7 @@ footer {
     left: 0;
     width: 100%;
     color: #fff;
-    padding: 10px 20px;
-    background-color: #000000;
+    padding: 5px 0px;
+    background-color: var(--cor5);
+    text-align: center;
 }
