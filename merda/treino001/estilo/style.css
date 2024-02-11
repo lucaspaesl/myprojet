@@ -14,8 +14,9 @@
 body{
     font: normal 20px ariel;
     background-color: var(--cor1);
-   
+    
 }
+
 .tudo{
     min-width: 320px;
     max-width: 1080px;
@@ -26,22 +27,33 @@ header{
     background-color: var(--cor5);
     padding: 10px;
     width: 100%;
-    left: 0;
-    margin: 10px;
+    margin: auto;
+}
+header li {
+    padding: 10px;
 }
 ul{
     list-style-type: none; 
     padding: 0px;
     text-align: left;
-    
 }
 li{
     display: inline;
+}
+a:hover{
+    border: 2px solid #403F4C;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px #00000091;
+}
+a{
+    text-decoration: none;
+    color: #00d0ff;
 }
 #hero{
     background-color: var(--cor1);
     text-align: center;
     padding: 0px 10px 0px 10px;
+    color: var(--cor4);
 
 }
 #hero img {
