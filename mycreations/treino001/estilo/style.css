@@ -10,50 +10,57 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
-body{
+body {
     font: normal 20px ariel;
-    background-color: var(--cor1);
-    
+    background-color: var(--cor1); 
 }
 
-#tudo{
-    min-width: 320px;
-    max-width: 100%;
+a {
+    text-decoration: none;
 }
-header{
-    background-color: var(--cor5);
+
+.hover-a:hover {
+    --_clr: var(--clr, var(--cor1));
+
+    border: 2px solid var(--_clr);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px #00000091;
+}
+
+.nav-a {
+    --clr: #00d0ff;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    height: 50px;
     padding: 10px 0px;
-    width: 100%;
-    margin: auto;
+    background-color: var(--cor5);
 }
-header li {
-    padding: 10px;
-}
-ul{
+#navbar ul {
     list-style-type: none; 
     padding: 0px;
     text-align: left;
 }
-li{
+#navbar li {
+    padding: 10px;
     display: inline;
 }
-a:hover{
-    border: 2px solid #403F4C;
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px #00000091;
-}
-a{
-    text-decoration: none;
+#navbar a {
     color: #00d0ff;
 }
-#hero{
-    height: 93vh;
+
+/* main {
+    height: calc(100vh - 50px - 50px);
+} */
+
+#hero {
     background-color: var(--cor1);
     text-align: center;
-    padding: 0px 10px;
     color: var(--cor4);
-
 }
 #hero img {
     width: 100%;
@@ -63,11 +70,11 @@ a{
 #hero a {
     color: var(--cor3);
 }
-#icones{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: auto;
+
+#icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #icones a {
     margin: 0 10px;
@@ -76,13 +83,14 @@ a{
     width: 40px;
     border-radius: 50%;
 }
-footer {
-    font-size: 10px;
-    bottom: 0;
-    left: 0;
+
+#footer {
+    position: fixed;
+    bottom:0;
+    left:0;
     width: 100%;
-    color: #fff;
-    padding: 5px 0px;
-    background-color: var(--cor5);
+    height: 50px;
     text-align: center;
+    color: #fff;
+    background-color: var(--cor5);
 }
