@@ -1,63 +1,63 @@
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: sans-serif;
-    background-color: #08090b;
-    color: white;
+    height: 100vh; /* Define a altura do corpo da página como 100% da altura da janela de visualização */
+    display: flex; /* Faz uso do flexbox para alinhar os elementos centralmente */
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    font-family: sans-serif; /* Define a fonte do texto */
+    background-color: #08090b; /* Define a cor de fundo do corpo da página */
+    color: white; /* Define a cor do texto */
 }
 
 ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 0; /* Remove o preenchimento padrão da lista */
+    margin: 0; /* Remove as margens padrão da lista */
+    display: flex; /* Faz uso do flexbox para alinhar os itens da lista */
+    flex-wrap: wrap; /* Permite que os itens da lista sejam quebrados para a próxima linha conforme necessário */
 }
 
 ul li {
-    list-style: none;
+    list-style: none; /* Remove os marcadores padrão dos itens da lista */
 }
 
 ul li a {
-    text-decoration: none; /* Corrigido */
-    color: #3d3d3d;
-    font-size: 22px;
-    display: block;
-    padding: 10px 15px;
-    position: relative;
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #3d3d3d; /* Define a cor do texto dos links */
+    font-size: 22px; /* Define o tamanho da fonte dos links */
+    display: block; /* Faz os links ocuparem toda a largura do contêiner */
+    padding: 10px 15px; /* Adiciona preenchimento interno aos links */
+    position: relative; /* Define a posição dos links como relativa */
 }
 
 ul li a:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #1cd8d2;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: all 0.5s; /* Corrigido */
+    content: ''; /* Adiciona um conteúdo vazio antes do link (usado para criar o efeito de sublinhado) */
+    position: absolute; /* Define a posição do sublinhado como absoluta em relação ao link */
+    top: 0; /* Alinha o sublinhado com o topo do link */
+    left: 0; /* Alinha o sublinhado com a esquerda do link */
+    width: 100%; /* Define a largura do sublinhado como 100% da largura do link */
+    height: 2px; /* Define a altura do sublinhado */
+    background-color: #1cd8d2; /* Define a cor do sublinhado */
+    transform: scaleX(0); /* Inicialmente, o sublinhado não é visível (escala horizontal 0) */
+    transform-origin: left; /* Define o ponto de origem da transformação do sublinhado como a esquerda */
+    transition: all 0.5s; /* Adiciona uma transição suave para o sublinhado */
 }
 
 ul li a:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #1cd8d2;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: all 0.5s; /* Corrigido */
+    content: ''; /* Adiciona um conteúdo vazio após o link (usado para criar o efeito de sublinhado) */
+    position: absolute; /* Define a posição do sublinhado como absoluta em relação ao link */
+    bottom: 0; /* Alinha o sublinhado com a parte inferior do link */
+    left: 0; /* Alinha o sublinhado com a esquerda do link */
+    width: 100%; /* Define a largura do sublinhado como 100% da largura do link */
+    height: 2px; /* Define a altura do sublinhado */
+    background-color: #1cd8d2; /* Define a cor do sublinhado */
+    transform: scaleX(0); /* Inicialmente, o sublinhado não é visível (escala horizontal 0) */
+    transform-origin: right; /* Define o ponto de origem da transformação do sublinhado como a direita */
+    transition: all 0.5s; /* Adiciona uma transição suave para o sublinhado */
 }
 
 ul li a:hover {
-    color: #1cd8d2;
+    color: #1cd8d2; /* Altera a cor do texto do link ao passar o mouse sobre ele */
 }
 
 ul li a:hover:before, ul li a:hover:after {
-    transform: scaleX(1);
+    transform: scaleX(1); /* Aumenta a escala horizontal do sublinhado para 1 ao passar o mouse sobre o link */
 }
