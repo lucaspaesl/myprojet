@@ -17,16 +17,68 @@ body {
     background-color: var(--cor1); 
 }
 
+.hover-a:hover {
+    border: 2px solid var(--_clr);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px #00000091;
+}
+
 a {
     text-decoration: none;
 }
 
-.hover-a:hover {
-    --_clr: var(--clr, var(--cor1));
+ul {
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+}
 
-    border: 2px solid var(--_clr);
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px #00000091;
+ul li {
+    list-style: none; 
+}
+
+ul li a {
+    text-decoration: none; 
+    color: #3d3d3d; 
+    font-size: 15px; 
+    display: block; 
+    padding: 10px 15px; 
+    position: relative; 
+}
+
+ul li a:before {
+    content: ''; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 2px; 
+    background-color: #1cd8d2; 
+    transform: scaleX(0); 
+    transform-origin: left; 
+    transition: all 0.5s; 
+}
+
+ul li a:after {
+    content: '';
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 2px;
+    background-color: #1cd8d2; 
+    transform: scaleX(0); 
+    transform-origin: right; 
+    transition: all 0.5s;
+}
+
+ul li a:hover {
+    color: #1cd8d2; 
+}
+
+ul li a:hover:before, ul li a:hover:after {
+    transform: scaleX(1);
 }
 
 .nav-a {
@@ -40,23 +92,6 @@ a {
     padding: 10px 0px;
     background-color: var(--cor5);
 }
-#navbar ul {
-    list-style-type: none; 
-    padding: 0px;
-    text-align: left;
-}
-#navbar li {
-    padding: 10px;
-    display: inline;
-}
-#navbar a {
-    color: #00d0ff;
-}
-
-/* main {
-    height: calc(100vh - 50px - 50px);
-} */
-
 #hero {
     background-color: var(--cor1);
     text-align: center;
