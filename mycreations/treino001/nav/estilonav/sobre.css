@@ -6,24 +6,30 @@
     --cor3: #6AD5CB;
     --cor4: #7FBEAB;
     --cor5: #000000;
+    --cor6: #55CBFA;
+    --cor7: #5597FA;
+    --cor8: #55FAF4;
+    --cor9: #0176b0;
 }
+
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
-}
-body {
-    font: normal 20px ariel;
-    background-color: var(--cor1); 
-}
-.hover-a:hover {
-    border: 2px solid var(--_clr);
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px #00000091;
 }
 
-a {
-    text-decoration: none;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor1);
+}
+
+header{
+    min-width: auto;
+    max-width: auto;
+    color: var(--cor8);
+    padding: 15px;
+    background-color: #000000;
+    margin: auto;
+    box-shadow: 0px 0px 10px #00000071;
 }
 
 ul {
@@ -80,51 +86,44 @@ ul li a:hover:before, ul li a:hover:after {
     transform: scaleX(1);
 }
 
-.nav-a {
-    --clr: #00d0ff;
+main{
+    min-width: auto;
+    max-width: 800px;
+    color: var(--cor8);
+    padding: 20px;
+    background-color: #0176b0;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.442);
+    border-radius: 0px 0px 10px 10px;
 }
 
-#navbar {
-    position: sticky;
-    top: 0;
-    height: 50px;
-    padding: 10px 0px;
-    background-color: var(--cor5);
+li{
+    list-style-type: none; 
+    padding: 5px;
 }
-#hero {
-    background-color: var(--cor1);
-    text-align: center;
-    color: var(--cor4);
+
+header a:hover{
+    border: -1px solid white;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px #00000091;
 }
-#hero img {
+
+a{
+    color: #2DE1C2;
+}
+
+a:hover{
+    color: #ffffff;
+}
+
+footer {
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    max-width: 400px;
-    border-radius: 50%;
-}
-#hero a {
-    color: var(--cor3);
-}
-
-#icones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#icones a {
-    margin: 0 10px;
-}
-#icones img {
-    width: 40px;
-    border-radius: 50%;
-}
-
-#footer {
-    position: fixed;
-    bottom:0;
-    left:0;
-    width: 100%;
-    height: 50px;
-    text-align: center;
     color: #fff;
+    padding: 5px 0px;
     background-color: var(--cor5);
+    text-align: center;
 }

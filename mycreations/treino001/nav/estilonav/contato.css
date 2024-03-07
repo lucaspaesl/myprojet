@@ -11,14 +11,17 @@
     --cor8: #55FAF4;
     --cor9: #0176b0;
 }
+
 *{
     margin: 0px;
     padding: 0px;
 }
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--cor1);
 }
+
 header{
     min-width: auto;
     max-width: auto;
@@ -28,6 +31,7 @@ header{
     margin: auto;
     box-shadow: 0px 0px 10px #00000071;
 }
+
 ul {
     padding: 0; 
     margin: 0; 
@@ -92,21 +96,26 @@ main{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.442);
     border-radius: 0px 0px 10px 10px;
 }
+
 li{
     list-style-type: none; 
     padding: 5px;
 }
+
 header a:hover{
     border: -1px solid white;
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px #00000091;
 }
+
 a{
     color: #2DE1C2;
 }
+
 a:hover{
     color: #ffffff;
 }
+
 footer {
     font-size: 10px;
     position: absolute;
