@@ -13,6 +13,8 @@
     box-sizing: border-box;
 }
 body {
+    height: 100%;
+    width: 100%;
     color: white;
     font: normal 20px ariel;
     background-color: var(--cor5); 
@@ -99,6 +101,13 @@ ul li a:hover:before, ul li a:hover:after {
     height: 700px;
     color: var(--cor3);
 }
+#hero {
+    height: auto;
+}
+#hero h1 {
+    font-size: 30px;
+}
+
 #hero img {
     border: 2px solid transparent;
     width: 100%;
@@ -106,15 +115,16 @@ ul li a:hover:before, ul li a:hover:after {
     border-radius: 50%;
     transition: border-color 0.3s ease;
 } 
+
 #hero img:hover {
     border-color: #942623;
 }
+
 #hero a {
     color: var(--cor2);
 }
 
 article{
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,16 +139,29 @@ article h1 {
     font-size: 50px;
 }
 
-article#about, article#contato{
+article#about {
     height: 700px;
 }
-article#contato{
-    font-size: 10px;
-    display: contents;
+#contato {
+    display: flex;
+    flex-direction: column;
+
 }
-article#contato > p{
-    font-size: 20px;
-    
+#contato h1{
+    text-align: right;
+}
+#contato ul {
+    text-align: center; /* Centraliza o texto dentro da lista */
+    padding: 0;
+}
+
+#contato ul li {
+    list-style: none;
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+article ul{
+    align-items: center;
 }
 #contato ul{
     padding: 20px;
