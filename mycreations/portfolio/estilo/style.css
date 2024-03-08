@@ -98,7 +98,6 @@ ul li a:hover:before, ul li a:hover:after {
 #hero {
     background-color: var(--cor5);
     text-align: center;
-    height: 700px;
     color: var(--cor3);
 }
 #hero {
@@ -123,7 +122,24 @@ ul li a:hover:before, ul li a:hover:after {
 #hero a {
     color: var(--cor2);
 }
+@media screen and (max-width: 768px) {
+    article {
+        margin-top: 100px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    article h1 {
+        order: -1; /* Move o título para cima */
+        font-size: 30px; /* Tamanho menor para telas menores */
+        margin-bottom: 30px; /* Espaçamento inferior para o título */
+    }
+
+    article p {
+        margin-left: 0; /* Remove a margem lateral do parágrafo */
+        font-size: 16px; /* Tamanho menor para telas menores */
+    }
+}
 article{
     display: flex;
     justify-content: space-between;
@@ -132,7 +148,8 @@ article{
 }
 article p {
     flex: 1;
-    margin-left: 100px;
+    margin: 0px 40px 0px 40px;
+    text-align: justify;
 }
 article h1 {
     color: var(--cor2);
@@ -141,14 +158,18 @@ article h1 {
 
 article#about {
     height: 700px;
+    width: auto;
 }
 #contato {
+    width: 100%;
+    padding: 200px 20px 200px 0px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-
 }
 #contato h1{
-    text-align: right;
+    font-size: 25px;
+    text-align: center;
 }
 #contato ul {
     text-align: center; /* Centraliza o texto dentro da lista */
